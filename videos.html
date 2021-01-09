@@ -12,6 +12,7 @@
 
 
     <style>
+
         h1 {
             font-size: 2em;
             margin-top: 0.5em;
@@ -59,8 +60,27 @@
                         <video id = "personasong" autoplay="autoplay" loop>
                         <source src="videos/Persona 4 Dancing All Night.mp4" type="video/mp4">
                         </video>
+
+                        <video id = "personasong-mb" autoplay="autoplay" loop controls="true" playsinline>
+                        <source src="videos/Persona 4 Dancing All Night.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
+
+                <script>
+                    
+                    if (navigator.appVersion.indexOf("Win")!=-1){
+                        var vid=document.getElementById('personasong-mb')
+                        vid.parentNode.removeChild(vid);
+                        
+                    }
+                    else{
+                        var othervid = document.getElementById('personasong');
+                        othervid.parentNode.removeChild(othervid)
+                        
+                    }
+                    
+                </script>
 
             </section>
         </article>

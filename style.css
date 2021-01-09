@@ -25,6 +25,7 @@ p {
 header {
     display: block;
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -256,12 +257,12 @@ article {
         margin: 2%;
     }
     .columns-desktop {
-        display: flex;
         flex-wrap: wrap;
     }
 
     .tablelook{
         display: flex;
+        flex-flow: row wrap;
     }
 
     .song-names-container{
@@ -286,10 +287,11 @@ article {
     
     #tv{
         margin: auto;
-        width: 900px;
+        width: 63%;
         height: auto; 
         border: 1px solid;
         position: relative;
+        
     }
 
     .tv-screen{
@@ -298,8 +300,8 @@ article {
         position: absolute; 
         top: 40%;
         left: 4%;
-        width: 640px;
-        height: 400px;
+        width: 70%;
+        height: auto; 
     }
 
     #tv>img{
@@ -310,6 +312,11 @@ article {
 
     .tv-screen> #personasong{
         width: 100%;
+        position: absolute;
+    }
+    .tv-screen> #personasong-mb{
+        width: 100%;
+        position: absolute;
     }
 
 }
