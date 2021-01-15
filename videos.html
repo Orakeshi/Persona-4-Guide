@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Calendar | Persona 4 Golden Guide</title>
     <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <script type="text/javascript" src="scripts/index.js"></script>
-    <script type="text/javascript" src="scripts/jquery.js"></script>
     <link rel="icon" type = "image/ico" href="images/favicon.ico">
 
 
@@ -26,6 +24,11 @@
             padding: 10px;
         }
 
+        nav>ul>li>#videos{
+            border-radius: 25px;
+            background-color: yellow;
+        }
+
 
     </style>
 </head>
@@ -37,14 +40,14 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sociallinks.html">Social Links</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="everything.html">Other</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a id = "home" href="index.html">Home</a></li>
+                <li><a id = "sociallinks"href="sociallinks.html">Social Links</a></li>
+                <li><a id = "calendar" href="calendar.html">Calendar</a></li>
+                <li><a id = "other" href="everything.html">Other</a></li>
+                <li><a id = "music"href="music.html">Music</a></li>
+                <li><a id = "videos" href="videos.html">Videos</a></li>
+                <li><a id = "contact" href="contact.html">Contact</a></li>
+                <li><a id = "about" href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -57,30 +60,41 @@
                 <div id="tv">
                     <img src="images/persona-tv-test.png"  alt="TV for the videos">
                     <div class="tv-screen">
-                        <video id = "personasong" autoplay="autoplay" loop>
-                        <source src="videos/Persona 4 Dancing All Night.mp4" type="video/mp4">
+                        <video id = "player" autoplay="autoplay" loop webkit-playsinline playsinline>
                         </video>
+                        <div class="tv-guide">
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 PS2 Intro.mp4">
+                            </button>
+                            
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
 
-                        <video id = "personasong-mb" autoplay="autoplay" loop controls="true" playsinline>
-                        <source src="videos/Persona 4 Dancing All Night.mp4" type="video/mp4">
-                        </video>
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+
+                            <button class = "play-button" id="ps2intro" data-video-url="/videos/Persona 4 Dancing All Night.mp4">
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="tv-controls">
+                        <button onclick="stopVid()">
+                        STOP
+                        </button>
                     </div>
                 </div>
-
-                <script>
-                    
-                    if (navigator.appVersion.indexOf("Win")!=-1){
-                        var vid=document.getElementById('personasong-mb')
-                        vid.parentNode.removeChild(vid);
-                        
-                    }
-                    else{
-                        var othervid = document.getElementById('personasong');
-                        othervid.parentNode.removeChild(othervid)
-                        
-                    }
-                    
-                </script>
 
             </section>
         </article>
@@ -101,5 +115,7 @@
             </ul>
         </nav>
     </footer>
+    <script type="text/javascript" src="scripts/videos.js"></script>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
 </body>
 </html>
