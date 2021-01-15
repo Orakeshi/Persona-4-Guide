@@ -1,4 +1,4 @@
-*/ Random code so GITHUB STORES THE FILE
+/*Script for TV Player*/
 function swapVideo() {
     player.src = this.getAttribute("data-video-url");
     tvGuide.style.visibility = "hidden";
@@ -19,4 +19,4 @@ function stopVid()
     player.pause();
     player.currentTime = 0;
 }
-*/
+
