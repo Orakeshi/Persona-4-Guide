@@ -11,26 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <style>
-        h1{
-            font-family: 'Abril Fatface', cursive;
-            text-align: center;
-            width: 85%;
-            color: white;
-            text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;  
-            font-size: 55px;
+        nav>ul>li>#calendar{
+            border-radius: 25px;
+            background-color: yellow;
         }
-
-        .sub-text {
-            background-color: lightyellow;
-            font-size: 1.5em;
-            padding: 10px;
-        }
-
-
     </style>
 </head>
 <body>
@@ -53,7 +37,6 @@
     <main>
         <aside><img src="../../images/P4Glogo.png" alt="Persona 4 Golden"></aside>
         <article>
-            <h1>Calendar</h1>
             <section class="calendar-layout">
                 <div class = "calendar-title">
                     <tr>
@@ -65,9 +48,9 @@
                 </div>
 
                 <div class ="calendar-contents">
-                    <table border="1" cellspacing="1" cellpadding="1" align="center">
+                    <table>
                         <tbody>
-                            <tr>
+                            <tr id="headers-months">
                                 <th>Sunday</th>
                                 <td>Monday</td>
                                 <td>Tuesday</td>
@@ -99,71 +82,70 @@
 
                             <tr id=tablerows>
                                 <td>10</td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">11</a>
-                                    <img id = "weather" src="../../images/weather-cloudy.png" alt="cloudy">
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">12</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">13</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">14</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">15</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">16</a>
                                 </td>
                             </tr>
 
                             <tr id=tablerows>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">17</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">18</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">19</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">20</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">21</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">22</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">23</a>
                                 </td>
                             </tr>
 
                             <tr id=tablerows>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">24</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">25</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">26</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">27</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">28</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">29</a>
                                 </td>
-                                <td>
+                                <td id="calendar-clickable">
                                     <a title="April 11th" href="../April/April_11th.html">30</a>
                                 </td>
                             </tr>
